@@ -7,7 +7,20 @@ theme:
     code: Red Hat Mono
   favicon: assets/favicon.ico
   features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.sections
+    - navigation.expand
     - navigation.footer
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
   palette:
     # Dark mode
     - scheme: slate
@@ -26,7 +39,28 @@ theme:
       accent: pink
 
 markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+  - blog
+
+nav:
+  - CS_Study: 
+    - Programming_Languages: CS_study/CS61C.md
+    - DataBase: CS_study/database.md
+  - purple_love: about.md
+  - Tags: tags.md
+  - code: code/my-first-c.md
