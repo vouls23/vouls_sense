@@ -1,5 +1,5 @@
 site_name: My site
-site_url: https://mydomain.org/mysite
+site_url: http://localhost:8000/mysite/
 theme:
   name: material
   font:
@@ -55,7 +55,6 @@ plugins:
   - search
   - tags:
       tags_file: tags.md
-  - blog
 
 nav:
   - CS_Study: 
@@ -64,5 +63,3 @@ nav:
   - purple_love: about.md
   - Tags: tags.md
   - code: code/my-first-c.md
-  - blog: blog/posts/2025-1-26.md
-  
