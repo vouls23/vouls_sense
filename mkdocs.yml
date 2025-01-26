@@ -1,5 +1,5 @@
 site_name: My site
-site_url: http://localhost:8000/mysite/
+site_url: https://vouls23.github.io/vouls_sense/
 theme:
   name: material
   font:
@@ -57,6 +57,7 @@ plugins:
       tags_file: tags.md
 
 nav:
+  - Home: index.md
   - CS_Study: 
     - Programming_Languages: CS_study/CS61C.md
     - DataBase: CS_study/database.md
